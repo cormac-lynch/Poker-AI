@@ -1,0 +1,320 @@
+﻿body {
+    background-color: darkgreen;
+}
+
+#action-box {
+    width: 40%;
+    height: 25%;
+    background-color: forestgreen;
+    border: 1px solid black;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0px;
+    right: 30%;
+}
+
+#action-sum {
+    font-size: 7vh;
+    width: 20%;
+    height: 30%;
+    margin: 2px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+#user-info {
+    position: absolute;
+    bottom: 26%;
+    left: 30%;
+    width: 12%;
+    height: 10%;
+    border: 1px solid black;
+    background-color: green;
+}
+
+#ai-info {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    width: 12%;
+    height: 10%;
+    border: 1px solid black;
+    background-color: green;
+}
+
+#log-box {
+    overflow: auto;
+    background-color: forestgreen;
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+    #log-box > div {
+        word-wrap: break-word;
+        background-color: #1e7d1e;
+        margin: 1px;
+    }
+
+
+
+.button {
+    background-color: darkgray;
+    border: darkgrey solid 1px;
+    border-radius: 2px;
+    color: white;
+    width: 30%;
+    height: 90%;
+    margin: 3px;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+
+    .button:active {
+        background-color: gray;
+    }
+
+#buttons {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 30%;
+}
+
+#fold-button {
+    background-color: orangered;
+}
+
+    #fold-button:active {
+        background-color: #CE3700;
+    }
+
+#check-button {
+    background-color: #e5e500;
+}
+
+    #check-button:active {
+        background-color: #CCCC00;
+    }
+
+#bet-button {
+    background-color: blue;
+}
+
+    #bet-button:active {
+        background-color: #0000cc;
+    }
+
+.button.restart {
+    background-color: slateblue;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 10%;
+    height: 8%;
+    font-size: 2.5vw;
+}
+
+    .button.restart:active {
+        background-color: darkslateblue;
+    }
+
+#loading-gif {
+    position: absolute;
+    right: 20%;
+    top: 3%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.hand {
+    width: 10%;
+    height: 15%;
+}
+
+.card > .front {
+    width: 95%;
+    position: absolute;
+    bottom: 5%;
+}
+
+.card > .suit-top {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    width: 30%;
+}
+
+.card > .suit-bottom {
+    position: absolute;
+    bottom: 7%;
+    right: 4%;
+    width: 30%;
+}
+
+
+.hand > .card {
+    width: 50%;
+    height: 90%;
+}
+
+.left-card {
+    left: 0%;
+    top: 20%;
+    position: absolute;
+}
+
+.right-card {
+    right: 0%;
+    top: 20%;
+    position: absolute;
+}
+
+.card-value {
+    position: relative;
+    left: 35%;
+    top: 20%;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#user-hand {
+    position: absolute;
+    bottom: 27%;
+    left: 45%;
+}
+
+#ai-hand {
+    position: absolute;
+    top: 1%;
+    left: 45%;
+}
+
+.action {
+    border: solid 1px black;
+    border-radius: 2px;
+    width: 10%;
+    height: 10%;
+    font-weight: bold;
+}
+
+    .action > div {
+        margin: 1px;
+    }
+
+        .action > div > span.type {
+            color: darkblue;
+        }
+
+#user-action {
+    background-color: lightblue;
+    position: absolute;
+    bottom: 26%;
+    left: 58%
+}
+
+#ai-action {
+    background-color: lightcoral;
+    position: absolute;
+    top: 2%;
+    left: 58%
+}
+
+#table-cards {
+    background-color: lightcyan;
+    border: solid 1px black;
+    border-radius: 2px;
+    width: 26%;
+    height: 16%;
+    font-weight: bold;
+    position: absolute;
+    left: 37.5%;
+    top: 35%;
+}
+
+    #table-cards > .card {
+        height: 90%;
+        width: 20%;
+        top: 9%;
+        position: absolute;
+    }
+
+    #table-cards > .flop2 {
+        left: 20%;
+    }
+
+    #table-cards > .flop3 {
+        left: 40%;
+    }
+
+    #table-cards > .turn {
+        left: 60%;
+    }
+
+    #table-cards > .river {
+        left: 80%;
+    }
+
+.dealer-indicator {
+    border: 1px solid black;
+    font-size: 1.5vw;
+    background-color: white;
+    margin: 2%;
+    display: inline-block;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
+#pot {
+    background-color: green;
+    border: solid 1px black;
+    font-size: 2.5vw;
+    border-radius: 2px;
+    width: 10%;
+    height: 10%;
+    font-weight: bold;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+}
+
+    #pot > span.text {
+        color: darkblue;
+    }
+
+#game-ended-message {
+    background-color: lightcyan;
+    border: 1px solid black;
+    border-radius: 2px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    bottom: 10%;
+}
+
+#game-ended-message > .win, .lose {
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 5%;
+}
+
+#game-ended-message > button {
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    font-size: 3vw;
+    left: 35%;
+    bottom: 2%;
+}

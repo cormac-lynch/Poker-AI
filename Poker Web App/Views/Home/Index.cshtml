@@ -1,0 +1,143 @@
+﻿@model Poker_Web_App.Models.GameState
+@using Action = Poker_Web_App.Poker.Action;
+@using Poker_Web_App.Poker;
+
+@{
+    ViewBag.Title = "Poker Web App";
+
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/Index.css">
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+
+<div>
+    <div class="hand" id="user-hand">
+        <div class="card left-card">
+            <img class="front" src="~/Resources/card-front.png" alt="Left Card">
+            <div class="card-value"></div>
+            <img class="suit-top" src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" src="~/Resources/spade.png" alt="suit" />
+        </div>
+
+        <div class="card right-card">
+            <img class="front" src="~/Resources/card-front.png" alt="Right Card">
+            <div class="card-value"></div>
+            <img class="suit-top" src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" src="~/Resources/spade.png" alt="suit" />
+        </div>
+    </div>
+
+    <div class="hand" id="ai-hand">
+        <div class="card left-card">
+            <img class="front" src="~/Resources/card-back.png" alt="Left Card" />
+            <div class="card-value" hidden></div>
+            <img class="suit-top" hidden src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" hidden src="~/Resources/spade.png" alt="suit" />
+        </div>
+        <div class="card right-card">
+            <img class="front" src="~/Resources/card-back.png" alt="Right Card">
+            <div class="card-value" hidden></div>
+            <img class="suit-top" hidden src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" hidden src="~/Resources/spade.png" alt="suit" />
+        </div>
+    </div>
+
+    <div id="table-cards">
+        <div class="card flop1">
+            <img class="front" src="~/Resources/card-front.png" alt="Left Card">
+            <div class="card-value"></div>
+            <img class="suit-top" src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" src="~/Resources/spade.png" alt="suit" />
+        </div>
+        <div class="card flop2">
+            <img class="front" src="~/Resources/card-front.png" alt="Left Card">
+            <div class="card-value"></div>
+            <img class="suit-top" src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" src="~/Resources/spade.png" alt="suit" />
+        </div>
+        <div class="card flop3">
+            <img class="front" src="~/Resources/card-front.png" alt="Left Card">
+            <div class="card-value"></div>
+            <img class="suit-top" src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" src="~/Resources/spade.png" alt="suit" />
+        </div>
+        <div class="card turn">
+            <img class="front" src="~/Resources/card-front.png" alt="Left Card">
+            <div class="card-value"></div>
+            <img class="suit-top" src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" src="~/Resources/spade.png" alt="suit" />
+        </div>
+        <div class="card river">
+            <img class="front" src="~/Resources/card-front.png" alt="Left Card">
+            <div class="card-value"></div>
+            <img class="suit-top" src="~/Resources/spade.png" alt="suit" />
+            <img class="suit-bottom" src="~/Resources/spade.png" alt="suit" />
+        </div>
+    </div>
+
+    <div id="log-box">
+    </div>
+
+    <div id="user-info">
+        <div>Chips: <span class="chips">@Model.user.chips</span></div>
+        <div class="dealer-indicator">Dealer</div>
+    </div>
+
+    <div id="ai-info">
+        <div>Chips: <span class="chips">@Model.ai.chips</span></div>
+        <div class="dealer-indicator">Dealer</div>
+    </div>
+
+    <div id="action-box">
+        <input id="action-sum" type="number" />
+
+        <div id="buttons">
+            <button id="bet-button" class="button" type="button" onclick="bet()">Call/Bet/Raise</button>
+            <button id="check-button" class="button" type="button" onclick="check()">Check</button>
+            <button id="fold-button" class="button" type="button" onclick="fold()">Fold</button>
+        </div>
+    </div>
+
+    <img id="loading-gif" src="~/Resources/loading-gif.gif" alt="Loading-Gif" hidden>
+
+    <button class="button restart" onclick="startNewGame()">Restart</button>
+
+    <div class="action" id="user-action">
+        <div><span class="type">Bet</span> <span class="sum">20</span></div>
+    </div>
+
+    <div class="action" id="ai-action">
+        <div><span class="type">Bet</span> <span class="sum">20</span></div>
+    </div>
+
+    <div id="pot"><span class="text">Pot: </span><span class="value">@Model.pot</span></div>
+
+    <div id="game-ended-message" hidden>
+        <div class="win">Congratualtions, you won!</div>
+        <div class="lose">Hard luck, you lost</div>
+
+        <button class="button" onclick="finishedStartNewGame()">Restart</button>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script>
+    //Set razor variables as MVC razor cannot be used in external javascript files
+    var UpdateGameStateURL = '@Url.Action("UpdateGameState", "Home")';
+
+    var GetRoundsHTMLURL = '@Url.Action("GetRoundsHTML", "Home")';
+    var GetTableCardsHTMLURL = '@Url.Action("GetTableCardsHTML", "Home")';
+    var GetPotURL = '@Url.Action("GetPotHTML", "Home")';
+    var GetUserChipsURL = '@Url.Action("GetUserChipsHTML", "Home")';
+    var GetAIChipsURL = '@Url.Action("GetAIChipsHTML", "Home")';
+    var GetUserHandURL = '@Url.Action("GetUserHandHTML", "Home")';
+    var GetAIHandURL = '@Url.Action("GetAIHandHTML", "Home")';
+
+    var gameState = @Html.Raw(Json.Encode(Model));
+</script>
+
+<script src="~/Scripts/Index.js"></script>

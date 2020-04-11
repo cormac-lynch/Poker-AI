@@ -1,0 +1,35 @@
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB Insert.exe
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\obj\Debug\netcoreapp3.0\MongoDB Insert.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\obj\Debug\netcoreapp3.0\MongoDB Insert.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\obj\Debug\netcoreapp3.0\MongoDB Insert.AssemblyInfo.cs
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\mongocrypt.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB Insert.deps.json
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB Insert.runtimeconfig.json
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB Insert.runtimeconfig.dev.json
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB Insert.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB Insert.pdb
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\DnsClient.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB.Bson.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB.Driver.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB.Driver.Core.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\MongoDB.Libmongocrypt.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\SharpCompress.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\Poker Web App.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.Optimization.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.Mvc.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\Microsoft.Web.Infrastructure.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.WebPages.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.WebPages.Razor.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.Razor.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.WebPages.Deployment.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\Poker Web App.pdb
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\Poker Web App.dll.config
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.Optimization.xml
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.Mvc.xml
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.WebPages.xml
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.WebPages.Razor.xml
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.Razor.xml
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\bin\Debug\netcoreapp3.0\System.Web.WebPages.Deployment.xml
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\obj\Debug\netcoreapp3.0\MongoDB Insert.csproj.CopyComplete
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\obj\Debug\netcoreapp3.0\MongoDB Insert.dll
+C:\Users\User\source\repos\Poker Web App\MongoDB Insert\obj\Debug\netcoreapp3.0\MongoDB Insert.pdb
